@@ -1,0 +1,30 @@
+.InformationItem {
+    display: flex;
+    font-size: large;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.Icon {
+    margin-right: 1rem;
+}
+
+.InformationItem a {
+    text-decoration: none;
+}
+
+.Link {
+    color:rgb(173, 104, 48)
+}
+
+@media (max-width: 1399px) {
+    .InformationItem {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 999px) {
+    .InformationItem {
+        font-size: small;
+    }
+}

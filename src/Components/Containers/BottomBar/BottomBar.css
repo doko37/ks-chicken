@@ -1,0 +1,35 @@
+.TopBar {
+    background-color: rgb(173, 104, 48);
+    width: 400px;
+    height: 0.5rem;
+    margin: 0.5rem auto 2rem auto;
+}
+
+.BottomBar {
+    background-color: rgb(173, 104, 48);
+    width: 400px;
+    height: 0.5rem;
+    margin: 0.5rem auto 2rem auto;
+}
+
+@media (max-width: 1399px) {
+    .TopBar {
+        width: 300px;
+    }
+
+    .BottomBar {
+        width: 300px;
+    }
+}
+
+@media (max-width: 999px) {
+    .TopBar {
+        width: auto;
+        margin: 0px 25% 2rem;
+    }
+
+    .BottomBar {
+        width: auto;
+        margin: 0px 25% 1rem;
+    }
+}

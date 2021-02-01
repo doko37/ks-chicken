@@ -1,0 +1,11 @@
+.ContactUs  {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 999px) {
+    .ContactUs {
+        display: list-item;
+        list-style: none;
+    }
+}

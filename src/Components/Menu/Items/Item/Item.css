@@ -1,0 +1,20 @@
+.Item {
+    display: flex;
+    margin: 1rem;
+    font-size: medium;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+
+.chicken {
+    width: 12rem;
+    height: 12rem;
+}
+
+@media (max-width: 999px) {
+    .chicken {
+        width: 8rem;
+        height: 8rem;
+        box-sizing: content-box;
+    }
+}

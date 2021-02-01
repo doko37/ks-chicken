@@ -1,0 +1,10 @@
+.Items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 699px) {
+    .Items {
+        grid-template-columns: 1fr;
+    }
+}

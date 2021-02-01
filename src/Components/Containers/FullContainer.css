@@ -1,0 +1,9 @@
+.FullContainer {
+    margin-top: 8rem;
+}
+
+@media (max-width: 1399px) {
+    .FullContainer {
+        margin-top: 6rem;
+    }
+}

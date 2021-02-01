@@ -1,0 +1,17 @@
+.App {
+    width: 1400px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1399px) {
+    .App {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 999px) {
+    .App {
+        width:auto;
+    }
+}

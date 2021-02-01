@@ -1,0 +1,26 @@
+.SideIcon {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.OpenedSideIcon {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transform:rotate(180deg);
+}
+
+@media (max-width: 699px) {
+    .SideIcon {
+        display: inline-flex;
+    }
+
+    .OpenedSideIcon {
+        display: inline-flex;
+    }
+}

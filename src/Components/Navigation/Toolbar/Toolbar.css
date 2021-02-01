@@ -1,0 +1,32 @@
+.Toolbar {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #1c1c1c;
+    justify-content: space-between;
+    position: fixed;
+    width: 1400px;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+}
+
+.Logo {
+    padding-left: 1rem;
+    width: 210px;
+}
+
+@media (max-width: 1399px) {
+    .Toolbar {
+        width: 1000px;
+    }
+
+    .Logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 999px) {
+    .Toolbar {
+        width: 100%;
+    }
+}

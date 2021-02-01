@@ -1,0 +1,20 @@
+.NavigationItems {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.SideDrawerNavigationItems {
+    display: none;
+}
+
+@media (max-width: 699px) {
+    .SideDrawerNavigationItems {
+        display: list-item;
+        list-style: none;
+    }
+
+    .NavigationItems {
+        display: none;
+    }
+}
