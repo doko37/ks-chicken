@@ -30,7 +30,7 @@ const items = (props) => {
             },
             {   
                 title: "Crispy Fried Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Original Chicken but battered with Panko to give it an extra cripsy texture.",
                 price: "Half - $18 | Full - $34",
                 picture: crispy
             },
@@ -42,13 +42,13 @@ const items = (props) => {
             },
             {   
                 title: "Spicy Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Same sweet flavour like the korean fried chicken but with a spicy kick.",
                 price: "Half - $18 | Full - $34",
                 picture: spicy
             },
             {   
                 title: "Hot and Spicy Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Directly translated as \"Fire Chicken\", the Hot and Spicy Chicken is not for sensitive stomachs.",
                 price: "Half - $18 | Full - $34",
                 picture: hotandspicy
             },
@@ -66,7 +66,7 @@ const items = (props) => {
             },
             {   
                 title: "Soy Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Original Chicken marinated in sweet savoury soy sauce.",
                 price: "Half - $18 | Full - $34",
                 picture: soy
             },
@@ -110,31 +110,29 @@ const items = (props) => {
         sides: [
             {   
                 title: "Chips", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Medium - $4 | Large - $6", 
                 picture: chips
             },
             {   
                 title: "Rice", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Per serving - $2",
                 picture: rice
             },
             {   
                 title: "Radish", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Sweet and sour pickled radish, a perfect palate cleanser to go with your chicken",
                 price: "Per serving - $2",
                 picture: radish
             },
             {   
                 title: "Coleslaw", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Fresh cabbage, corn and capcicum mixed with lemon mayonnaise",
                 price: "Per serving - $2",
                 picture: coleslaw
             },
             {   
                 title: "Sauce", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Get extra sauce on the side. Choose between: Korean, Spicy, Hot and Spicy, and Sweet Chilly.",
                 price: "Per serving - $4",
                 picture: sauce
             }

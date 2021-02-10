@@ -19,7 +19,7 @@ nav {
     margin-right: 40px;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 999px) {
     .SideDrawer {
         display: flex;
     }

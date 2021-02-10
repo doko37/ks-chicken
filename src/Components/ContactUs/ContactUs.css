@@ -1,11 +1,12 @@
 .ContactUs  {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1;
 }
 
 @media (max-width: 999px) {
     .ContactUs {
         display: list-item;
         list-style: none;
+        margin: 0;
     }
 }

@@ -1,5 +1,7 @@
 .PageTitle {
-    text-align: center;
-    margin-bottom: 0.5rem;
+    text-align: left;
+    margin: 2rem 0rem 2rem 1rem;
     font-size: 40px;
+    width:fit-content;
+    border-bottom: 0.5rem solid rgb(173, 104, 48);
 }

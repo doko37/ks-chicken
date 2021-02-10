@@ -6,9 +6,10 @@ import Home from '../Home/Home';
 import ContactUs from '../ContactUs/ContactUs';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import BottomBar from './BottomBar/BottomBar';
 
 const fullContainer = () => {
-    const [drawerState, setDrawerState] = useState(false)
+    const [drawerState, setDrawerState] = useState(false);
     
     const toggleSideDrawerHandler = () => {
         setDrawerState(!drawerState)
@@ -18,9 +19,12 @@ const fullContainer = () => {
         <div className="FullContainer">
             <Toolbar toggleSideDrawer={toggleSideDrawerHandler}/>
             <SideDrawer toggleSideDrawer={toggleSideDrawerHandler} sideDrawerState={drawerState}/>
-            <Route path="/" exact component={Home}/> 
-            <Route path="/menu" component={Menu}/>
-            <Route path="/contact-us" component={ContactUs}/>
+            <div>
+                <Route path="/" exact component={Home}/> 
+                <Route path="/menu" component={Menu}/>
+                <Route path="/contact-us" component={ContactUs}/>
+            </div>
+            <BottomBar type="BottomBar"/>
         </div>
     )
 }

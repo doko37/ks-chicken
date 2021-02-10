@@ -1,7 +1,9 @@
 .Menu {
     padding: 0 1rem;
+    margin-bottom: 2rem;
 }
 
 .MenuTitle {
     text-align: left;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.4);
 }

@@ -3,9 +3,3 @@
     align-items: center;
     padding-right: 40px;
 }
-
-@media (max-width: 999px) {
-    .Information {
-        padding-top: 40px;
-    }
-}
