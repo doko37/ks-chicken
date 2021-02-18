@@ -13,11 +13,17 @@ import honeybutter from './Images/honeybutter.jpg';
 import padak from './Images/padak.jpg';
 import snowy from './Images/snowy.jpg';
 import onion from './Images/onion.jpg';
-import chips from './Images/chips.jpg';
+import chips from './Images/chips.JPG';
 import rice from './Images/rice.jpg';
 import radish from './Images/radish.jpg';
 import coleslaw from './Images/coleslaw.jpg';
 import sauce from './Images/sauce.jpg';
+import pasta from '../Lunch/Images/pasta.jpg';
+import macncheese from '../Lunch/Images/macandcheese.jpg';
+import potnbacon from '../Lunch/Images/potatoandbacon.jpg';
+import lunchcoleslaw from '../Lunch/Images/coleslaw.jpg';
+import udonsalad from '../Lunch/Images/udonsalad.jpg';
+import salad from '../Lunch/Images/salad.jpg';
 
 const items = (props) => {
     const itemList = {
@@ -136,6 +142,45 @@ const items = (props) => {
                 price: "Per serving - $4",
                 picture: sauce
             }
+        ],
+        lunchSalads: [
+            {
+                title: "Pasta",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: pasta,
+                lunch: true
+            },
+            {
+                title: "Mac and Cheese",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: macncheese,
+                lunch: true
+                
+            },
+            {
+                title: "Potato and Bacon",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: potnbacon,
+                lunch: true
+            },
+            {
+                title: "Coleslaw",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: lunchcoleslaw,
+                lunch: true
+            },
+            {
+                title: "Salad",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: salad,
+                lunch: true
+            },
+            {
+                title: "Udon Salad",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: udonsalad,
+                lunch: true
+            },
         ]
     }
 
@@ -161,6 +206,18 @@ const items = (props) => {
                                         description={item.description}
                                         price={item.price}
                                         picture={item.picture}
+                                    />
+                        })}
+                    </div>
+        break;
+        case "lunchSalads":
+            list = <div className="Items">
+                        {itemList.lunchSalads.map(item => {
+                            return <Item 
+                                        title={item.title} 
+                                        description={item.description}
+                                        picture={item.picture}
+                                        lunch={item.lunch}
                                     />
                         })}
                     </div>

@@ -5,10 +5,12 @@ import logo from './logo.png';
 import Icon from '../SideDrawer/Icon/Icon';
 
 const toolbar = (props) => (
-    <div className="Toolbar">
-        <img src={logo} className="Logo" alt="logo"/>
-        <Icon iconType="SideIcon" toggleSideDrawer={props.toggleSideDrawer} sideDrawerState={props.sideDrawerState}/>
-        <NavigationItems />
+    <div className="TbBackground">
+        <div className="Toolbar">
+            <a href="/"><img src={logo} className="Logo" alt="logo"/></a>
+            <Icon iconType="SideIcon" toggleSideDrawer={props.toggleSideDrawer} sideDrawerState={props.sideDrawerState}/>
+            <NavigationItems />
+        </div>
     </div>
 )
 

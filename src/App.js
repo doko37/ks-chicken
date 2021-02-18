@@ -7,6 +7,8 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
+      <div className="BarTop"/>
+      <div className="BarBottom"/>
         <div className="App">
           <FullContainer />
         </div>

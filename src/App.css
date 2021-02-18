@@ -4,9 +4,28 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.BarTop {
+    width: 100%;
+    background-color: #1c1c1c;
+    height: 101.45px;
+    top: 0;
+    position: fixed;
+}
+
+.BarBottom {
+    width: 100%;
+    background-color: #1c1c1c;
+    height: 48px;
+    bottom: 0;
+}
+
 @media (max-width: 1399px) {
     .App {
         width: 1000px;
+    }
+
+    .BarTop {
+        height: 73.6167px;
     }
 }
 

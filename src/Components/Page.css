@@ -1,7 +1,13 @@
 .PageTitle {
     text-align: left;
-    margin: 2rem 0rem 2rem 1rem;
+    margin: 2rem 0;
     font-size: 40px;
     width:fit-content;
-    border-bottom: 0.5rem solid rgb(173, 104, 48);
+    border-bottom: 0.4rem solid rgb(173, 104, 48);
+}
+
+@media (max-width: 999px) {
+    .PageTitle {
+        margin-left: 1rem;
+    }
 }

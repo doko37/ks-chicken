@@ -2,6 +2,7 @@ import React from 'react';
 import './Menu.css';
 import Items from './Items/Items';
 import '../Page.css';
+import Lunch from './Lunch/Lunch';
 
 const menu = () => (
     <div>
@@ -12,6 +13,8 @@ const menu = () => (
             <h1 className="MenuTitle">Sides</h1>
             <Items listName="sides"/>
         </div>
+        <h1 id="lunch" className="PageTitle">LUNCH</h1>
+        <Lunch />
     </div>
 )
 

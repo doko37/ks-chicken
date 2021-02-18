@@ -1,0 +1,41 @@
+.LunchTop {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.SizeDescription {
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 1rem;
+    width: 50%;
+}
+
+.SizeDescription2 {
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+
+.SizeTitle {
+    text-decoration: underline;
+}
+
+@media (max-width: 999px) {
+    .LunchTop {
+        display: unset;
+    }
+
+    .SizeDescription {
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: auto;
+    }
+
+    .SizeDescription2 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: auto;
+    }
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import './Home.css';
-import HomeButtons from './HomeButtons/HomeButtons';
-import HomeInfo from './HomeInfo/HomeInfo';
+import HomeBottomHalf from './HomeBottomHalf/HomeBottomHalf';
+import bigboy from './HomeButtons/Images/homepagechicken.jpeg';
 
 const home = () => (
     <div className="Home">
-        <HomeButtons />
-        <HomeInfo />
+        <img className="HomePicture" src={bigboy} alt="headerpicture"/>
+        <HomeBottomHalf />
     </div>
 )
 

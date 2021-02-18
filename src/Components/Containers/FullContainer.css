@@ -1,10 +1,10 @@
 .FullContainer {
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 @media (max-width: 1399px) {
     .FullContainer {
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
 }

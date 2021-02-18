@@ -1,5 +1,39 @@
 .HomeInfo {
-    background-color: lightgoldenrodyellow;
-    height: 100%;
-    margin-left: 2rem;
+    height: auto;
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.HomeInfoTitle {
+    text-decoration: underline;
+}
+
+.InfoSeperator {
+    width: 1px;
+    height: 239px;
+    margin: 0 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1399px) {
+    .HomeInfo {
+        font-size: small;
+    }
+}
+
+@media (max-width: 999px) {
+    .HomeInfo {
+        margin-top: 1rem;
+        border: none;
+        width: auto;
+        display: unset;
+    }
+
+    .InfoSeperator {
+        width: 80%;
+        height: 1px;
+        margin: auto;
+    }
 }

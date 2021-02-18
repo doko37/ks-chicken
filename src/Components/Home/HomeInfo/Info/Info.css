@@ -1,0 +1,12 @@
+.Info {
+    margin: 2rem 0;
+    text-align: center;
+    width: 33%;
+}
+
+@media (max-width: 999px) {
+    .Info {
+        margin: 3rem auto;
+        width: auto;
+    }
+}
