@@ -1,5 +1,5 @@
 import React from 'react';
-import {GoogleMap, useJsApiLoader} from '@react-google-maps/api';
+import {GoogleMap, useJsApiLoader, Marker} from '@react-google-maps/api';
 
 import './MapContainer.css';
 
@@ -9,8 +9,8 @@ const containerStyle = {
 }
 
 const center = {
-    lat: -36.743178,
-    lng: 174.725203
+    lat: -36.74303789271435,
+    lng: 174.7251509661827
 }
 
 const map = () => {
@@ -19,7 +19,6 @@ const map = () => {
       })
 
       if(!isLoaded) return "Loading Maps";
-    
       return (
         <div className="MapContainer">
             <GoogleMap
