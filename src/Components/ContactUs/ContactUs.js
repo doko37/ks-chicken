@@ -6,11 +6,11 @@ import '../Page.css';
 
 const contactUs = () => (
     <div className="ContactUs">
-        <Map />
         <div>
             <h1 className="PageTitle">CONTACT US</h1>
             <Information />
         </div>
+        <Map />
     </div>
 )
 

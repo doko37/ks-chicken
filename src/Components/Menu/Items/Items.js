@@ -1,6 +1,7 @@
 import React from 'react';
 import './Items.css'
 import Item from './Item/Item';
+
 import original from './Images/original.jpg';
 import crispy from './Images/crispy.jpg';
 import korean from './Images/korean.jpg';
@@ -13,17 +14,30 @@ import honeybutter from './Images/honeybutter.jpg';
 import padak from './Images/padak.jpg';
 import snowy from './Images/snowy.jpg';
 import onion from './Images/onion.jpg';
+
 import chips from './Images/chips.JPG';
 import rice from './Images/rice.jpg';
 import radish from './Images/radish.jpg';
 import coleslaw from './Images/coleslaw.jpg';
 import sauce from './Images/sauce.jpg';
+
+import broccoli from '../Lunch/Images/broccoli.jpg';
 import pasta from '../Lunch/Images/pasta.jpg';
 import macncheese from '../Lunch/Images/macandcheese.jpg';
 import potnbacon from '../Lunch/Images/potatoandbacon.jpg';
 import lunchcoleslaw from '../Lunch/Images/coleslaw.jpg';
 import udonsalad from '../Lunch/Images/udonsalad.jpg';
 import salad from '../Lunch/Images/salad.jpg';
+import spicyudon from '../Lunch/Images/spicy_udon.jpg';
+
+import teriyaki from '../Lunch/Images/teriyaki.jpg';
+import bulgogi from '../Lunch/Images/bulgogi.jpg';
+import popcorn from '../Lunch/Images/popcorn.jpg';
+import lunchspicy from '../Lunch/Images/spicy.jpg';
+import lunchhoneybutter from '../Lunch/Images/honeybutter.jpg';
+import bbq from '../Lunch/Images/bbq.jpg';
+import garlicsoy from '../Lunch/Images/garlicsoy.jpg';
+import lunchonion from '../Lunch/Images/onion.jpg';
 
 const items = (props) => {
     const itemList = {
@@ -145,7 +159,13 @@ const items = (props) => {
         ],
         lunchSalads: [
             {
-                title: "Pasta",
+                title: "Broccoli Salad",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: broccoli,
+                lunch: true
+            },
+            {
+                title: "Pasta Salad",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 picture: pasta,
                 lunch: true
@@ -170,7 +190,7 @@ const items = (props) => {
                 lunch: true
             },
             {
-                title: "Salad",
+                title: "Balsamic and Vineger Salad",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 picture: salad,
                 lunch: true
@@ -181,6 +201,62 @@ const items = (props) => {
                 picture: udonsalad,
                 lunch: true
             },
+            {
+                title: "Spicy Udon Salad",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: spicyudon,
+                lunch: true
+            },
+        ],
+        lunchMeats: [
+            {
+                title: "Teriyaki Chicken",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: teriyaki,
+                lunch: true
+            },
+            {
+                title: "Bulgogi Beef",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: bulgogi,
+                lunch: true
+            },
+            {
+                title: "Popcorn Chicken",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: popcorn,
+                lunch: true
+            },
+            {
+                title: "Spicy Chicken",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: lunchspicy,
+                lunch: true
+            },
+            {
+                title: "Honey Butter Chicken",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: lunchhoneybutter,
+                lunch: true
+            },
+            {
+                title: "BBQ Chicken",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: bbq,
+                lunch: true
+            },
+            {
+                title: "Garlic Soy Chicken",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: garlicsoy,
+                lunch: true
+            },
+            {
+                title: "Onion Seasoning",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                picture: lunchonion,
+                lunch: true
+            }
         ]
     }
 
@@ -213,6 +289,18 @@ const items = (props) => {
         case "lunchSalads":
             list = <div className="Items">
                         {itemList.lunchSalads.map(item => {
+                            return <Item 
+                                        title={item.title} 
+                                        description={item.description}
+                                        picture={item.picture}
+                                        lunch={item.lunch}
+                                    />
+                        })}
+                    </div>
+        break;
+        case "lunchMeats":
+            list = <div className="Items">
+                        {itemList.lunchMeats.map(item => {
                             return <Item 
                                         title={item.title} 
                                         description={item.description}

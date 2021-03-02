@@ -1,13 +1,18 @@
 import React from 'react';
 import './Home.css';
 import HomeBottomHalf from './HomeBottomHalf/HomeBottomHalf';
-import bigboy from './HomeButtons/Images/homepagechicken.jpeg';
+import image1 from './HomeButtons/Images/homepagechicken.jpeg';
 
-const home = () => (
-    <div className="Home">
-        <img className="HomePicture" src={bigboy} alt="headerpicture"/>
-        <HomeBottomHalf />
-    </div>
-)
+
+const home = () => {
+    return (
+        <div className="Home">
+            <div className="SlideShow">
+                <img className="HomePicture" src={image1} alt="bigboy" />
+            </div>
+            <HomeBottomHalf />
+        </div>
+    )
+}
 
 export default home;
