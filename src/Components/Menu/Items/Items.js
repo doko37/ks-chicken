@@ -270,6 +270,7 @@ const items = (props) => {
                                         description={item.description}
                                         price={item.price}
                                         picture={item.picture}
+                                        key={item.title}
                                     />
                         })}
                     </div>
@@ -282,6 +283,7 @@ const items = (props) => {
                                         description={item.description}
                                         price={item.price}
                                         picture={item.picture}
+                                        key={item.title}
                                     />
                         })}
                     </div>
@@ -294,6 +296,7 @@ const items = (props) => {
                                         description={item.description}
                                         picture={item.picture}
                                         lunch={item.lunch}
+                                        key={item.title}
                                     />
                         })}
                     </div>
@@ -306,6 +309,7 @@ const items = (props) => {
                                         description={item.description}
                                         picture={item.picture}
                                         lunch={item.lunch}
+                                        key={item.title}
                                     />
                         })}
                     </div>

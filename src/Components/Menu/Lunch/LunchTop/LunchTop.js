@@ -4,7 +4,7 @@ import './LunchTop.css';
 const lunchTop = () => (
     <div className="LunchTop">
         <div className="SizeDescription">
-            <h4 className="SizeTitle">Small</h4>
+            <h4 className="SizeTitle">Medium</h4>
             <p>Choose up to 2 choices of meat and 3 choices of salad.</p>
             <p><strong>Price:</strong> $11</p>
         </div>
