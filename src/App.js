@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <link rel="icon" href ={headerlogo} />
+      <link rel="icon" href ={headerlogo}/>
       <div className="BarTop"/>
       <div className="BarBottom"/>
       <div className="App">
