@@ -24,7 +24,6 @@ const fullContainer = () => {
                 <Route path="/menu" component={Menu}/>
                 <Route path="/contact-us" component={ContactUs}/>
             </div>
-            <BottomBar type="BottomBar"/>
         </div>
     )
 }

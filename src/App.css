@@ -15,8 +15,39 @@
 .BarBottom {
     width: 100%;
     background-color: #1c1c1c;
-    height: 48px;
-    bottom: 0;
+    height: 3rem;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 100%;
+    align-items: center;
+}
+
+.BottomDescription {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1c1c1c;
+    width: 1400px;
+    height:fit-content;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size:small;
+}
+
+@media (max-width: 1399px) {
+    .BottomDescription {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 999px) {
+    .BottomDescription {
+        width: 100%;
+        font-size:x-small;
+    }
+}
+
+.BottomDescription p {
+    color: white;
 }
 
 @media (max-width: 1399px) {

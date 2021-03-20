@@ -1,13 +1,15 @@
 import React from 'react';
+import {css} from '@emotion/css';
 import './Home.css';
 import HomeBottomHalf from './HomeBottomHalf/HomeBottomHalf';
-import image1 from './HomeButtons/Images/homepagechicken.jpeg';
+import Slider from './Slider/Slider';
 
 const home = () => {
+    const getWidth = () => window.innerWidth;
 
     return (
         <div className="Home">
-            <img className="HomePicture" src={image1} alt="HomeImage"/>
+            <Slider screenWidth={getWidth}/>
             <HomeBottomHalf />
         </div>
     )

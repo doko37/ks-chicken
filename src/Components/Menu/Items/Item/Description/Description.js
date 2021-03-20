@@ -6,6 +6,7 @@ const description = (props) => (
         <h4>{props.title}</h4>
         <p>{props.description}</p>
         { !props.lunch ? <p><strong>Price: </strong>{props.price}</p> : null }
+        { props.main ? <p><strong>Options: </strong>{props.options}</p> : null }
     </div>
 )
 

@@ -1,22 +1,16 @@
 .Description {
-    text-align: left;
-    margin: 1rem;
-    font-size: medium;
-}
-
-@media (max-width: 1399px) {
-    .Description {
-        font-size: small;
-    }
+  text-align: left;
+  margin: 1rem;
+  font-size: small;
 }
 
 @media (max-width: 999px) {
-    .Description {
-        font-size:x-small;
-        margin: 0.2rem;
-    }
+  .Description {
+    font-size: xx-small;
+    margin: 0.2rem;
+  }
 }
 
 h4 {
-    margin: 0;
+  margin: 0;
 }

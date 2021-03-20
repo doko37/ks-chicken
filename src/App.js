@@ -10,9 +10,15 @@ class App extends Component {
       <BrowserRouter>
       <link rel="icon" href ={headerlogo}/>
       <div className="BarTop"/>
-      <div className="BarBottom"/>
       <div className="App">
         <FullContainer />
+      </div>
+      <div className="BarBottom">
+        <div className="BottomDescription">
+          <p>KS CHICKEN</p>
+          <p>33b Triton Drive, Rosedale, Auckland 0632</p>
+          <p>09-476-1952</p>
+        </div>
       </div>
       </BrowserRouter>
     );

@@ -12,23 +12,6 @@
     margin: 0.5rem auto 4rem auto;
 }
 
-.BottomBar {
-    width: 1400px;
-    background-color: #1c1c1c;
-    height: 3rem;
-    color: white;
-    font-size: x-small;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.BottomDescription {
-    margin: 0px 0.5rem;
-}
-
 @media (max-width: 1399px) {
     .TopBar {
         width: 300px;

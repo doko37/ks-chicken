@@ -46,85 +46,113 @@ const items = (props) => {
                 title: "Original Fried Chicken", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: original
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: original,
+                main: true
             },
             {   
                 title: "Crispy Fried Chicken", 
                 description: "Original Chicken but battered with Panko to give it an extra cripsy texture.",
                 price: "Half - $18 | Full - $34",
-                picture: crispy
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: crispy,
+                main: true
             },
             {   
                 title: "Korean Fried Chicken", 
                 description: "A Korean classic. Fried chicken marinated with sweet sticky red sauce, topped with sesame and peanuts.",
                 price: "Half - $18 | Full - $34",
-                picture: korean
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: korean,
+                main: true
             },
             {   
                 title: "Spicy Chicken", 
                 description: "Same sweet flavour like the korean fried chicken but with a spicy kick.",
                 price: "Half - $18 | Full - $34",
-                picture: spicy
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: spicy,
+                main: true
             },
             {   
                 title: "Hot and Spicy Chicken", 
                 description: "Directly translated as \"Fire Chicken\", the Hot and Spicy Chicken is not for sensitive stomachs.",
                 price: "Half - $18 | Full - $34",
-                picture: hotandspicy
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: hotandspicy,
+                main: true
             },
             {   
                 title: "Sweet Chilly Chicken", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: sweetchilly
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: sweetchilly,
+                main: true
             },
             {   
                 title: "Spicy Soy Chicken", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: spicysoy
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: spicysoy,
+                main: true
             },
             {   
                 title: "Soy Chicken", 
                 description: "Original Chicken marinated in sweet savoury soy sauce.",
                 price: "Half - $18 | Full - $34",
-                picture: soy
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: soy,
+                main: true
             },
             {   
                 title: "Garlic Soy", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: soy
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: soy,
+                main: true
             },
             {   
                 title: "BBQ Chicken", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: soy
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: soy,
+                main: true
             },
             {   
                 title: "Honey Butter Chicken", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: honeybutter
+                options: "Boneless or Nibble",
+                picture: honeybutter,
+                main: true
             },
             {   
                 title: "Padak", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: padak
+                options: "Boneless",
+                picture: padak,
+                main: true
             },
             {   
                 title: "Snowy Cheese Chicken", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: snowy
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: snowy,
+                main: true
             },
             {   
                 title: "Onion Seasoning Chicken", 
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 price: "Half - $18 | Full - $34",
-                picture: onion
+                options: "Whole Chicken, Boneless, or Nibble",
+                picture: onion,
+                main: true
             },
         ],
         sides: [
@@ -270,6 +298,8 @@ const items = (props) => {
                                         description={item.description}
                                         price={item.price}
                                         picture={item.picture}
+                                        options={item.options}
+                                        main={item.main}
                                         key={item.title}
                                     />
                         })}
