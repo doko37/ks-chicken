@@ -1,11 +1,12 @@
 import React from 'react';
 import './NavigationItem.css';
+import {Link} from 'react-router-dom';
 
 const navigationItem = (props) => (
     <li className="NavigationItem">
-        <a href={props.link}>
+        <Link to={props.link}>
             {props.children}
-        </a>
+        </Link>
     </li>
 )
 

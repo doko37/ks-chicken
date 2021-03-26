@@ -1,10 +1,11 @@
 import React from 'react';
 import './HomeButtons.css';
 import {css} from '@emotion/css';
+import {Link} from 'react-router-dom';
 
 const menuButton = () => (
     <div className="img">
-        <a href="/menu" className="p">MENU</a>
+        <Link to="/menu" className="p">MENU</Link>
     </div>
 )
 
