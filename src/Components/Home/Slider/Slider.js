@@ -37,14 +37,15 @@ const Slider = props => {
         position: absolute;
         top: 50%;
         z-index: 1;
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 4rem;
         margin-left: 0.5rem;
         @media (max-width: 999px) {
-          height: 20px;
-          width: 20px;
+          height: 40px;
+          width: 40px;
+          top: 45%;
         }
         &:hover {
             background-color: rgba(0, 0, 0, 0.5);
@@ -56,15 +57,16 @@ const Slider = props => {
         top: 50%;
         right: 0;
         z-index: 1;
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
         transform: rotate(180deg);
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 4rem;
         margin-right: 0.5rem;
         @media (max-width: 999px) {
-          height: 20px;
-          width: 20px;
+          height: 40px;
+          width: 40px;
+          top: 45%;
         }
         &:hover {
             background-color: rgba(0, 0, 0, 0.5);
