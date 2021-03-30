@@ -3,7 +3,7 @@ import './Description.css';
 
 const description = (props) => (
     <div className="Description">
-        <h4>{props.title}</h4>
+        <h2 className="itemTitle">{props.title}</h2>
         <p>{props.description}</p>
         { !props.lunch ? <p><strong>Price: </strong>{props.price}</p> : null }
         { props.main ? <p><strong>Options: </strong>{props.options}</p> : null }

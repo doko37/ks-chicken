@@ -1,23 +1,23 @@
 .Menu {
-    padding: 0;
-    margin-bottom: 2rem;
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
 .MenuTitle {
-    text-align: left;
-    border-bottom: 1px solid  rgba(0, 0, 0, 0.4);
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 999px) {
-    .MenuTitle {
-        margin: 2rem 1rem 0.5rem 1rem;
-    }
+  .MenuTitle {
+    margin: 2rem 1rem 0.5rem 1rem;
+  }
 }
 
 @media (max-width: 699px) {
-    .MenuTitle {
-        margin: 2rem 1rem 0 1rem;
-    }
+  .MenuTitle {
+    margin: 2rem 1rem 0 1rem;
+  }
 }
