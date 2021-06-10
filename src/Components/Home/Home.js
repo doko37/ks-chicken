@@ -9,7 +9,7 @@ const home = () => {
 
     return (
         <div className="Home">
-            <Slider screenWidth={getWidth}/>
+            <Slider screenWidth={getWidth} autoPlay={5}/>
             <HomeBottomHalf />
         </div>
     )
