@@ -1,17 +1,37 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {css} from '@emotion/css';
 import SliderContainer from './SliderContainer';
 import Slide from './Slide';
 import iconsvg from '../../Navigation/SideDrawer/Icon/icon.png';
 import image1 from '../HomeButtons/Images/homepagechicken.jpeg';
-import image2 from '../HomeButtons/Images/StoreInterior.jpg';
+import image2 from './promotion.jpg';
 import image3 from '../HomeButtons/Images/image3.PNG';
-import image4 from '../HomeButtons/Images/image4.png';
+import image4 from '../HomeButtons/Images/StoreInterior.jpg';
 import DotContainer from './SliderDots/DotContainer';
 import SliderDot from './SliderDots/SliderDot';
 
 const Slider = props => {
-    const [slide, setSlide] = useState(0);
+    const [state, setState] = useState({
+      activeSlide: 0,
+      translate: 0,
+      transition: 0.5
+    })
+
+    const { transition, translate, activeSlide} = state
+    const autoPlayRef = useRef()
+
+    useEffect(() => {
+      autoPlayRef.current = nextSlide
+    })
+
+    useEffect(() => {
+      const play = () => {
+        autoPlayRef.current()
+      }
+
+      const interval = setInterval(play, 5 * 1000)
+      return () => clearInterval(interval)
+    },[])
 
     const images = [
         image1,
@@ -80,17 +100,66 @@ const Slider = props => {
         margin-bottom: 1rem;
     `
 
+  const nextSlide = () => {
+    if (activeSlide === images.length - 1) {
+      return setState({
+        ...state,
+        translate: 0,
+        activeSlide: 0
+      })
+    }
+
+    setState({
+      ...state,
+      activeSlide: activeSlide + 1,
+      translate: (activeSlide + 1)
+    })
+  }
+
+  const prevSlide = () => {
+    if (activeSlide === 0) {
+      return setState({
+        ...state,
+        translate: (images.length - 1),
+        activeSlide: images.length - 1
+      })
+    }
+
+    setState({
+      ...state,
+      activeSlide: activeSlide - 1,
+      translate: (activeSlide - 1)
+    })
+  }
+
   const imageContainer = <div className={sliderCSS}>
-    <img src={iconsvg} className={arrowleft} onClick={slide === 0 ? () => setSlide(images.length - 1) : () => setSlide(slide - 1)}/>
-    <img src={iconsvg} className={arrowright} onClick={slide === images.length - 1 ? () => setSlide(0) : () => setSlide(slide + 1)}/>
+    {/*<img src={iconsvg} className={arrowleft} onClick={prevSlide}/> 
+    <img src={iconsvg} className={arrowright} onClick={nextSlide}/> */}
     <DotContainer className={dotPosition}>
-      <SliderDot show={slide === 0 ? true : false} dotClicked={() => setSlide(0)}/>
-      <SliderDot show={slide === 1 ? true : false} dotClicked={() => setSlide(1)}/>
-      <SliderDot show={slide === 2 ? true : false} dotClicked={() => setSlide(2)}/>
-      <SliderDot show={slide === 3 ? true : false} dotClicked={() => setSlide(3)}/>
+      <SliderDot show={activeSlide === 0 ? true : false} dotClicked={() => setState({
+        ...state,
+        translate: 0,
+        activeSlide: 0
+      })}/>
+      <SliderDot show={activeSlide === 1 ? true : false} dotClicked={() => setState({
+        ...state,
+        translate: 1,
+        activeSlide: 1
+      })}/>
+      <SliderDot show={activeSlide === 2 ? true : false} dotClicked={() => setState({
+        ...state,
+        translate: 2,
+        activeSlide: 2
+      })}/>
+      <SliderDot show={activeSlide === 3 ? true : false} dotClicked={() => setState({
+        ...state,
+        translate: 3,
+        activeSlide: 3
+      })}/>
     </DotContainer>
     <SliderContainer
-      translate={slide}
+      translate={translate}
+      transition={transition}
       width = {images.length}
     >
       {images.map((image, i) => (
@@ -98,8 +167,11 @@ const Slider = props => {
       ))}
     </SliderContainer>
   </div>
-    
 
+  Slider.defaultProps = {
+    slides: [],
+    autoPlay: null
+  }
 
   return (
     <div>

@@ -6,7 +6,6 @@ import HomeInfo from '../HomeInfo/HomeInfo';
 const homeBottomHalf = () => (
     <div className="HomeBottomHalf">
         <HomeButtons />
-        <HomeInfo />
     </div>
 )
 

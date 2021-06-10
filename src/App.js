@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import FullContainer from './Components/Containers/FullContainer';
 import headerlogo from './headerlogo.png';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div>
         <link rel="icon" href ={headerlogo}/>
         <div className="BarTop"/>
         <div className="App">
-          <FullContainer />
+            <FullContainer />
         </div>
         <div className="BarBottom">
           <div className="BottomDescription">
