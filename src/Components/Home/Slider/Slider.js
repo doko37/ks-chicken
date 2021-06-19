@@ -158,39 +158,6 @@ const Slider = () => {
     z-index: 2;
     margin-bottom: 1rem;
   `
-
-  const nextSlide = () => {
-    if (activeSlide === images.length - 1) {
-      return setState({
-        ...state,
-        translate: 0,
-        activeSlide: 0
-      })
-    }
-
-    setState({
-      ...state,
-      activeSlide: activeSlide + 1,
-      translate: (activeSlide + 1)
-    })
-  }
-
-  const prevSlide = () => {
-    if (activeSlide === 0) {
-      return setState({
-        ...state,
-        translate: (images.length - 1),
-        activeSlide: images.length - 1
-      })
-    }
-
-    setState({
-      ...state,
-      activeSlide: activeSlide - 1,
-      translate: (activeSlide - 1)
-    })
-  }
-
   const imageContainer = <div className={sliderCSS}>
     <Arrow nextSlide={() => buttonPressed('right')} direction={'right'}/>
     <Arrow nextSlide={() => buttonPressed('left')} direction={'left'}/>
