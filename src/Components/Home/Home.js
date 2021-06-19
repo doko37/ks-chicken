@@ -4,7 +4,6 @@ import HomeBottomHalf from './HomeBottomHalf/HomeBottomHalf';
 import Slider from './Slider/Slider';
 
 const home = () => {
-
     return (
         <div className="Home">
             <Slider/>
