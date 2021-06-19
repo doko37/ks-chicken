@@ -3,7 +3,7 @@ import './HomeButtons.css';
 
 const contactUsButton = () => (
     <div className="img3">
-        <a href="/contact-us" className="p">CONTACT US</a>
+        <a href="/contact-us" className="p">OUR STORE</a>
     </div>
 )
 

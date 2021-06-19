@@ -13,7 +13,7 @@ const contactUs = () => (
         <div className="fillerline"/>
         <div className="ContactUs">
             <div>
-                <h1 className="PageTitle">CONTACT US</h1>
+                <h1 className="PageTitle">OUR STORE</h1>
                 <Information />
             </div>
             <Map />

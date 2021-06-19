@@ -44,7 +44,7 @@ const items = (props) => {
         chicken: [
             {   
                 title: "Original Fried Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "[Insert description here]",
                 price: "Half - $18 | Full - $34",
                 options: "Whole Chicken, Boneless, or Nibble",
                 picture: original,
@@ -68,7 +68,7 @@ const items = (props) => {
             },
             {   
                 title: "Spicy Chicken", 
-                description: "Same sweet flavour like the korean fried chicken but with a spicy kick.",
+                description: "Korean fried chicken but with a spicy kick.",
                 price: "Half - $18 | Full - $34",
                 options: "Whole Chicken, Boneless, or Nibble",
                 picture: spicy,
@@ -84,7 +84,7 @@ const items = (props) => {
             },
             {   
                 title: "Sweet Chilly Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "[Insert description here]",
                 price: "Half - $18 | Full - $34",
                 options: "Whole Chicken, Boneless, or Nibble",
                 picture: sweetchilly,
@@ -92,7 +92,7 @@ const items = (props) => {
             },
             {   
                 title: "Spicy Soy Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Soy Chicken with a spicy kick.",
                 price: "Half - $18 | Full - $34",
                 options: "Whole Chicken, Boneless, or Nibble",
                 picture: spicysoy,
@@ -108,7 +108,7 @@ const items = (props) => {
             },
             {   
                 title: "Garlic Soy", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Soy Chicken with a garlic aroma",
                 price: "Half - $18 | Full - $34",
                 options: "Whole Chicken, Boneless, or Nibble",
                 picture: soy,
@@ -116,7 +116,7 @@ const items = (props) => {
             },
             {   
                 title: "BBQ Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Fried Chicken marinated with Smokey BBQ Sauce.",
                 price: "Half - $18 | Full - $34",
                 options: "Whole Chicken, Boneless, or Nibble",
                 picture: soy,
@@ -124,7 +124,7 @@ const items = (props) => {
             },
             {   
                 title: "Honey Butter Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Fried Chicken marinated with a sweet and sticky mix of honey and butter.",
                 price: "Half - $18 | Full - $34",
                 options: "Boneless or Nibble",
                 picture: honeybutter,
@@ -132,7 +132,7 @@ const items = (props) => {
             },
             {   
                 title: "Padak", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Fried Chicken topped with spring onions, with spicy mustard sauce on the side.",
                 price: "Half - $18 | Full - $34",
                 options: "Boneless",
                 picture: padak,
@@ -140,7 +140,7 @@ const items = (props) => {
             },
             {   
                 title: "Snowy Cheese Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Orignal Fried Chicken showered with cheese powder topping.",
                 price: "Half - $18 | Full - $34",
                 options: "Whole Chicken, Boneless, or Nibble",
                 picture: snowy,
@@ -148,7 +148,7 @@ const items = (props) => {
             },
             {   
                 title: "Onion Seasoning Chicken", 
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Orignal Fried Chicken showered in savoury onion powder topping",
                 price: "Half - $18 | Full - $34",
                 options: "Whole Chicken, Boneless, or Nibble",
                 picture: onion,
@@ -239,49 +239,49 @@ const items = (props) => {
         lunchMeats: [
             {
                 title: "Teriyaki Chicken",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Pan fried breast chicken strips marinated in teriyaki sauce.",
                 picture: teriyaki,
                 lunch: true
             },
             {
                 title: "Bulgogi Beef",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Pan fried marinated slices of beef. A Korean classic.",
                 picture: bulgogi,
                 lunch: true
             },
             {
                 title: "Popcorn Chicken",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Cripsy bitesized breast chicken pieces.",
                 picture: popcorn,
                 lunch: true
             },
             {
                 title: "Spicy Chicken",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Same sweet flavour like the korean fried chicken but with a spicy kick.",
                 picture: lunchspicy,
                 lunch: true
             },
             {
                 title: "Honey Butter Chicken",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Fried Chicken marinated with a sweet and sticky mix of honey and butter.",
                 picture: lunchhoneybutter,
                 lunch: true
             },
             {
                 title: "BBQ Chicken",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Fried Chicken marinated with Smokey BBQ Sauce.",
                 picture: bbq,
                 lunch: true
             },
             {
                 title: "Garlic Soy Chicken",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Soy Chicken with a garlic aroma",
                 picture: garlicsoy,
                 lunch: true
             },
             {
                 title: "Onion Seasoning",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: "Orignal Fried Chicken showered in savoury onion powder topping",
                 picture: lunchonion,
                 lunch: true
             }

@@ -13,7 +13,7 @@ const menu = () => (
             <h1 className="MenuTitle">Sides</h1>
             <Items listName="sides"/>
         </div>
-        <h1 id="lunch" className="PageTitle">LUNCH</h1>
+        <h1 id="lunch" className="PageTitle">LUNCH (12am - 3pm, Weekdays)</h1>
         <Lunch />
     </div>
 )

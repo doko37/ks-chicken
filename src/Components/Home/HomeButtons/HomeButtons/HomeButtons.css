@@ -4,7 +4,7 @@
   margin-top: 1rem;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 999px) {
   .HomeButtons {
     grid-template-columns: 1fr;
   }
@@ -19,6 +19,7 @@
   align-items: center;
   background-position-y: 50%;
   margin-right: 0.75rem;
+  justify-content: center;
 }
 
 .img2 {
@@ -31,6 +32,7 @@
   background-position-x: center;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+  justify-content: center;
 }
 
 .img3 {
@@ -42,6 +44,7 @@
   align-items: center;
   background-position-x: center;
   margin-left: 0.75rem;
+  justify-content: center;
 }
 
 .p {
@@ -49,14 +52,27 @@
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
   width: 70%;
-  height: 20%;
+  height: 30%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   transition: 0.15s ease-out;
-  left: 15%;
+}
+
+.p2 {
+  font-size: large;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 70%;
+  height: 30%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.15s ease-out;
 }
 
 .p:hover {
@@ -87,24 +103,34 @@
   }
 
   .p {
-    width: 80%;
-    height: 25%;
-    left: 10%;
+    width: 50%;
+    height: 100%;
+    left: 0;
+  }
+
+  .p2 {
+    width: 50%;
+    height: 100%;
+    right: 0;
   }
 
   .img {
-    height: 380px;
+    height: 150px;
     margin: 0;
+    justify-content: left;
   }
 
   .img2 {
-    height: 380px;
+    height: 150px;
     margin: 0;
+    background-position-y: 30%;
+    justify-content: right;
   }
 
   .img3 {
-    height: 380px;
+    height: 150px;
     margin: 0;
+    justify-content: left;
   }
 
   .img4 {

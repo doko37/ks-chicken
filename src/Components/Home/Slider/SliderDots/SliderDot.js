@@ -15,7 +15,7 @@ const SliderDots = props => {
     `
 
     return (
-        <div onClick={props.dotClicked} className={dotCSS} />
+        <div className={dotCSS} />
     )
 }
 

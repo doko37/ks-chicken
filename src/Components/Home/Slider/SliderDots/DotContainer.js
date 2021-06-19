@@ -3,10 +3,9 @@ import styled from '@emotion/styled';
 
 const DotContainer = styled.div`
     display: flex;
-    justify-content: spaced-between;
+    justify-content: space-evenly;
     width: 150px;
     height: fit-content;
-    justify-content: space-between;
     left: 50%;
     margin-left: -75px;
     @media (max-width: 999px) {

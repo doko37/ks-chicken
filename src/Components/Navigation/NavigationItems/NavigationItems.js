@@ -6,7 +6,7 @@ const navigationItems = (props) => (
     <div className={props.SideDrawer ? "SideDrawerNavigationItems" : "NavigationItems"}>
         <NavigationItem link="/">Home</NavigationItem>
         <NavigationItem link="/menu">Menu</NavigationItem>
-        <NavigationItem link="/contact-us">Contact Us</NavigationItem>
+        <NavigationItem link="/contact-us">Our Store</NavigationItem>
     </div>
 )
 

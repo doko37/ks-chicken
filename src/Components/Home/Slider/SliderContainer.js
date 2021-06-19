@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 const SlideContainer = styled.div`
   transform: translateX(-${props => props.translate * 1400}px);
-  transition: transform ease-out 0.5s;
+  transition: transform ease-out ${props => props.transition}s;
   height: 100%;
   width: ${props => props.width * 1400}px;
   display: flex;
